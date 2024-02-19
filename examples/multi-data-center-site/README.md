@@ -1,6 +1,6 @@
-# Imperva single-user example
+# Imperva multi-data-center-site example
 
-Configuration in this directory creates a single user under an account.
+Configuration in this directory creates a single data center site with load balancing under an account and assign it with several ACL policies
 
 # Usage
 

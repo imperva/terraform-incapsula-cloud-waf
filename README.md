@@ -1,39 +1,41 @@
 # Terraform Imperva Template Module
 
 
-This repository serves as a template for kickstarting the development of new Imperva Terraform modules. It provides a structured directory layout and sample files to help maintain consistency across projects.
-
-**Note:** This README is also a template for module documentation. Customize the content to match your module.
+This repository serves as a abstraction and simplification for common uses of the Imperva Cloud WAF terraform resources. 
 
 
 ## Usage
 
-Here is an example illustrating the basic usage of the module:
+Here is an example illustrating an onboarding a single data center site with load balancing:
   
 
 ```hcl
-module "imperva_single_user" {
-  source = "imperva/terraform-imperva-template-module"
-
-  account_id = data.incapsula_account_data.account_data.id
-  user       = {
-    first_name = "single"
-    last_name  = "user"
-    email      = "terraform-example@test.com"
-    role_ids   = [data.incapsula_account_roles.roles.reader_role_id]
+module "my_site_single_data_center" {
+  source      = "./incapsula-site-single-dc-load-balancing"
+  domain      = "my-site.incaptest.co"
+  data_center = {
+    name           = "my-data-center"
+    origin_servers = {
+      os1 = {
+        address = "1.1.1.1"
+      },
+      os2 = {
+        address = "2.2.2.2"
+      }
+    }
   }
 }
 ```
 
 ## Examples
 
-[Optional] The examples directory contains a "get started" example, demonstrating how to use the module or its sub-modules
-
-Here is a template of example documentation:
+The examples directory contains a "get started" examples, demonstrating how to use the module or its sub-modules
 
 Here you can find a few examples on how to use this module (and sub-modules):
 
-- [Create a single user under account](Link to the rhigt example directory)
+- [Create a single server site with incap rules](examples/single-server-site)
+- [Create a single data center site with load balancing and WAF policy](examples/single-data-center-load-blancing-site)
+- [Create a multi data center site and ACL policies](examples/multi-data-center-site)
 
 
 ## Resources
@@ -42,7 +44,11 @@ Here you can find a few examples on how to use this module (and sub-modules):
 
 | Name | Type |
 |------|------|
-| [incapsula_account_user](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/account_user) | resource |
+| [incapsula_site](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/site) | resource |
+| [incapsula_data_centers_configuration](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/data_centers_configuration) | resource |
+| [incapsula_policy](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/policy) | resource |
+| [incapsula_policy_asset_association](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/policy_asset_association) | resource |
+| [incapsula_incap_rule](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/incap_rule) | resource |
 
 ## Authors
 

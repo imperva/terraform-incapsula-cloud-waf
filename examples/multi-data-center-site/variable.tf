@@ -13,18 +13,8 @@ variable "api_key" {
 }
 
 variable "account_id" {
-  description = "(Optional )The account to operate on. If not specified, operation will be performed on the account identified by the authentication parameters."
+  description = "(Optional) The account to operate on. If not specified, operation will be performed on the account identified by the authentication parameters."
   type        = number
   nullable    = true
   default     = null
-}
-
-variable "user" {
-  description = "List of users"
-  type        = object({
-    first_name   = string
-    last_name    = string
-    email        = string
-    role_ids  = list(number)
-  })
 }
