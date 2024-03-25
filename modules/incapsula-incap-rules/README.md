@@ -1,1 +1,0 @@
-Provides a Incapsula Incap Rule resource. Incap Rules include security, delivery, and rate rules.

@@ -1,4 +1,4 @@
-# Terraform Imperva Template Module
+# Terraform Imperva Cloud WAF Module
 
 
 This repository serves as a abstraction and simplification for common uses of the Imperva Cloud WAF terraform resources. 
@@ -33,6 +33,7 @@ The examples directory contains a "get started" examples, demonstrating how to u
 
 Here you can find a few examples on how to use this module (and sub-modules):
 
+- [Create a site with allowlist policy, bots configuration, waf security rules and waf exceptions](examples/quickstart-site)
 - [Create a single server site with incap rules](examples/single-server-site)
 - [Create a single data center site with load balancing and WAF policy](examples/single-data-center-load-blancing-site)
 - [Create a multi data center site and ACL policies](examples/multi-data-center-site)

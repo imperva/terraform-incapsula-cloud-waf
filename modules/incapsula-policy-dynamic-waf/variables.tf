@@ -41,6 +41,6 @@ variable "description" {
 variable "sites_ids" {
   description = "(Required) The Sites IDs that will be assigned to the policy. Only type of asset supported at the moment is site."
   type        = map(string)
-  nullable    = true
+  nullable    = false
   default     = {}
 }

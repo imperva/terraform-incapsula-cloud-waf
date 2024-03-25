@@ -7,9 +7,16 @@ variable "site_id" {
 variable "rules" {
   description = "(Required) List of rules to apply to the site."
   type        = map(object({
-    name   = string
-    action = string
-    filter = string
+    name             = string
+    action           = string
+    filter           = optional(string)
+    dc_id            = optional(string)
+    response_code    = optional(string)
+    from             = optional(string)
+    to               = optional(string)
+    add_missing      = optional(string)
+    rewrite_existing = optional(string)
+    rewrite_name     = optional(string)
   }))
   nullable = false
 }
