@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     incapsula = {
-      source = "imperva/incapsula"
+      source  = "imperva/incapsula"
       version = ">=3.21.2"
     }
   }

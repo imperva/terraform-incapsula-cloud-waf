@@ -322,12 +322,12 @@ variable "is_persistent" {
 variable "data_centers" {
   description = "(Required) each site must have at least one data center."
   type        = map(object({
-    name                   = string,
-    is_enabled             = optional(bool)
-    is_active              = optional(bool)
-    is_content             = optional(bool)
-    origin_pop             = optional(string)
-    origin_servers         = map(object({
+    name           = string,
+    is_enabled     = optional(bool)
+    is_active      = optional(bool)
+    is_content     = optional(bool)
+    origin_pop     = optional(string)
+    origin_servers = map(object({
       address    = string,
       is_enabled = optional(bool),
       is_active  = optional(bool)

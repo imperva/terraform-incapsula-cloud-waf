@@ -1,5 +1,5 @@
 provider "incapsula" {
-  api_id = var.api_id # shell environment variable - TF_VAR_api_id
+  api_id  = var.api_id # shell environment variable - TF_VAR_api_id
   api_key = var.api_key # shell environment variable - TF_VAR_api_key
 }
 

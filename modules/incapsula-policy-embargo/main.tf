@@ -1,5 +1,5 @@
 locals {
-    sites = var.sites_ids
+  sites = var.sites_ids
 }
 
 

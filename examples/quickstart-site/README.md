@@ -1,6 +1,7 @@
 # Imperva quickstart-site example
 
-Configuration in this directory creates a site under an account, assign it with allowlist policy and adds to it bots configuration, waf security rules and waf exceptions.
+Configuration in this directory creates a site under an account, assign it with allowlist policy and adds to it bots configuration, waf security rules and waf
+exceptions.
 
 # Usage
 
