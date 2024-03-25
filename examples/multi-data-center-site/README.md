@@ -1,6 +1,9 @@
 # Imperva multi-data-center-site example
 
-Configuration in this directory creates a single data center site with load balancing under an account and assign it with several ACL policies
+Configuration in this directory creates a multi data center site with load balancing under an account and assign it with several ACL policies.
+The multi data center site is constructed out of 2 datacenters, each datacenter has a server group with 1 server.
+The site is assigned with 3 ACL policies. One ACL policy blocks embargo countries, the second blocks specific ips while the third blocks specific urls coming
+from specific countries.
 
 # Usage
 

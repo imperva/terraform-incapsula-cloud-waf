@@ -16,7 +16,7 @@ module "my_site_single_server" {
 }
 
 
-##INFO: The following incap-rules module creates two rules one with block ip with ASN filter and another session block with url and ip filter and applies them to the created site
+##INFO: The following incap-rules module creates 5 rules and applies them to the created site
 module "my_site_single_server_incap_rules" {
   source  = "../../modules/incapsula-incap-rules"
   site_id = module.my_site_single_server.site_id
@@ -37,13 +37,13 @@ module "my_site_single_server_incap_rules" {
       filter = "Full-URL == \"/admin\""
     },
     rule4 = {
-      name   = "rewrite homepage to home"
+      name   = "Rewrite homepage to home"
       action = "RULE_ACTION_REWRITE_URL"
       from   = "/homepage"
       to     = "/home"
     },
     rule5 = {
-      name          = "redirect url1 to url2 and response code 302"
+      name          = "Redirect url1 to url2 and response code 302"
       action        = "RULE_ACTION_REDIRECT"
       response_code = "302"
       from          = "https://my-site1.mydomain.co/url1"
