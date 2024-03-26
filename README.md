@@ -37,7 +37,7 @@ Here you can find a few examples on how to use this module (and sub-modules):
 
 ## Resources
 
-[Optional] A list of resources this module provides.
+A list of resources this module provides.
 
 | Name                                                                                                                                               | Type     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -46,6 +46,9 @@ Here you can find a few examples on how to use this module (and sub-modules):
 | [incapsula_policy](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/policy)                                         | resource |
 | [incapsula_policy_asset_association](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/policy_asset_association)     | resource |
 | [incapsula_incap_rule](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/incap_rule)                                 | resource |
+| [incapsula_bots_configuration](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/bots_configuration)                                 | resource |
+| [incapsula_security_rule_exception](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/security_rule_exception)                                 | resource |
+| [incapsula_waf_security_rule](https://registry.terraform.io/providers/imperva/incapsula/latest/docs/resources/waf_security_rule)                                 | resource |
 
 ## Authors
 
