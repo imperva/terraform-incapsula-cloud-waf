@@ -37,14 +37,16 @@ module "my_site_single_server_incap_rules" {
       filter = "Full-URL == \"/admin\""
     },
     rule4 = {
-      name   = "Rewrite homepage to home"
+      name   = "Rewrite homepage to home when header does not exist"
+      filter = "HeaderExists != \"mybot\""
       action = "RULE_ACTION_REWRITE_URL"
       from   = "/homepage"
       to     = "/home"
     },
     rule5 = {
-      name          = "Redirect url1 to url2 and response code 302"
+      name          = "Redirect url1 to url2 when header bot exists and response code 302"
       action        = "RULE_ACTION_REDIRECT"
+      filter        = "HeaderValue == {\"bot\";\"mybot\"}"
       response_code = "302"
       from          = "https://my-site1.mydomain.co/url1"
       to            = "https://my-site1.mydomain.co/url2"
