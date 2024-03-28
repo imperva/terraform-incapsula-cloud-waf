@@ -16,9 +16,9 @@ module "my_site_single_server" {
 }
 
 
-##INFO: The following incap-rules module creates 5 rules and applies them to the created site
-module "my_site_single_server_incap_rules" {
-  source  = "../../modules/incapsula-incap-rules"
+##INFO: The following rules module creates 5 rules and applies them to the created site
+module "my_site_single_server_rules" {
+  source  = "../../modules/incapsula-rules"
   site_id = module.my_site_single_server.site_id
   rules   = {
     rule1 = {
