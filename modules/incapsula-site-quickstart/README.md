@@ -1,5 +1,5 @@
 
-# Imperva incapsula-policy-dynamic-acl description
+# Imperva incapsula-site-quickstart description
 
 Configuration in this module creates a site under an account
 

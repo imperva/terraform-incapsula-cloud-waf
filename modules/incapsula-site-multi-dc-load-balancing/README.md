@@ -1,4 +1,4 @@
-# Imperva incapsula-policy-dynamic-acl description
+# Imperva incapsula-site-multi-dc-load-balancing description
 
 Configuration in this module creates a multi data center site with load balancing under an account
 

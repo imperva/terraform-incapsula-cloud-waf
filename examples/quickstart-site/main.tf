@@ -36,27 +36,27 @@ module "waf-security-rule" {
   ddos_traffic_threshold        = 3000
 }
 
+##INFO: The following incapsula-security-rule-exception creates 3 security rule exceptions for the site.
+resource "incapsula_security_rule_exception" "security-rule-exception-waf-backdoor" {
+  site_id      = module.my_quickstart_site.site_id
+  rule_id      = "api.threats.backdoor"
+  continents   = "NA"
+  countries    = "US"
+  ips          = "3.3.4.4"
+  url_patterns = "EQUALS,EQUALS,EQUALS"
+  urls         = "/myurl1.html,/index.html,/myurl.html"
+}
 
-##INFO: The following incapsula-security-rule-exception can only have 1 unique set (backdoor, bot access control, ddos) per site.
-module "security-rule-exceptions" {
-  source  = "../../modules/incapsula-security-rule-exception"
+resource "incapsula_security_rule_exception" "security-rule-exception-bot-access-control" {
+  site_id      = module.my_quickstart_site.site_id
+  rule_id      = "api.threats.bot_access_control"
+  ips          = "5.5.6.6"
+  url_patterns = "EQUALS,EQUALS,EQUALS"
+  urls         = "/myurl1.html,/index.html,/myurl.html"
+}
+
+resource "incapsula_security_rule_exception" "security-rule-exception-ddos" {
   site_id = module.my_quickstart_site.site_id
-
-  backdoor_security_rule_exception = {
-    continents   = "NA"
-    countries    = "US"
-    ips          = "3.3.4.4"
-    url_patterns = "EQUALS,EQUALS,EQUALS"
-    urls         = "/myurl1.html,/index.html,/myurl.html"
-  }
-
-  bot_access_control_security_rule_exception = {
-    ips          = "5.5.6.6"
-    url_patterns = "EQUALS,EQUALS,EQUALS"
-    urls         = "/myurl1.html,/index.html,/myurl.html"
-  }
-
-  ddos_security_rule_exception = {
-    ips = "7.7.8.8"
-  }
+  rule_id = "api.threats.ddos"
+  ips     = "7.7.8.8"
 }

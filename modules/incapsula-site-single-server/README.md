@@ -1,4 +1,4 @@
-# Imperva incapsula-policy-dynamic-acl description
+# Imperva incapsula-site-single-server description
 
 Configuration in this module a single server site under an account
 

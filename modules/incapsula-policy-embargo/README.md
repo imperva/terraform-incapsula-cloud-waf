@@ -1,4 +1,4 @@
-# Imperva incapsula-policy-dynamic-acl description
+# Imperva incapsula-policy-embargo description
 
 Configuration in this module allows to configure an embargo countries ACL policy and assign it to several sites
 

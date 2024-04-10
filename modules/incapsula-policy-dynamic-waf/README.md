@@ -1,4 +1,4 @@
-# Imperva incapsula-policy-dynamic-acl description
+# Imperva incapsula-policy-dynamic-waf description
 
 Configuration in this module allows to configure a WAF rules policy and assign it to several sites
 

@@ -1,4 +1,4 @@
-# Imperva incapsula-policy-dynamic-acl description
+# Imperva incapsula-policy-dynamic-allowlist description
 
 Configuration in this module allows to configure an allowlist policy and assign it to several sites
 
