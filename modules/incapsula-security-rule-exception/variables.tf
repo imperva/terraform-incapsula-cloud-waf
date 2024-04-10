@@ -61,7 +61,6 @@ variable "ddos_security_rule_exception" {
     # (Optional) A comma separated list of patters that correlate to the list of urls. url_patterns are required if you have urls specified, and patters are applied in the order specified and map literally to the list of urls. Supported values are: contains,equals,prefix,suffix,not_equals,not_contain,not_prefix,not_suffix. Example of how to apply url_patters to the three urls listed above in order: url_patters=\"prefix,equals,prefix\".
     urls         = optional(string)
     # (Optional) A comma separated list of resource paths. For example, /home and /admin/index.html are resource paths, while http://www.example.com/home is not. Each URL should be encoded separately using percent encoding as specified by RFC 3986 (http://tools.ietf.org/html/rfc3986#section-2.1). An empty URL list will remove all URLs. urls=\"/someurl1,/path/to/my/resource/2.html,/some/url/3\"
-    ips          = optional(string) # (Optional) A comma separated list of IPs or IP ranges, e.g: 192.168.1.1, 192.168.1.1-192.168.1.100 or 192.168.1.1/24
   })
   nullable = true
   default  = {
@@ -71,6 +70,5 @@ variable "ddos_security_rule_exception" {
     ips          = null
     url_patterns = null
     urls         = null
-    ips          = null
   }
 }
