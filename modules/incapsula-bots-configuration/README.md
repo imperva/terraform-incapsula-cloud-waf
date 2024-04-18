@@ -13,3 +13,4 @@ module "my_site_bots-configuration" {
   canceled_good_bots = ["Googlebot", "SiteUptime"]
   bad_bots           = ["Firefox", "Yandex Bot", "Swish-e"]
 }
+```

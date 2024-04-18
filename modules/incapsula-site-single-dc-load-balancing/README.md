@@ -22,3 +22,4 @@ module "my_site_single_data_center" {
     }
   }
 }
+```

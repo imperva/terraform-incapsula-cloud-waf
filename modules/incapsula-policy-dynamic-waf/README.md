@@ -21,3 +21,4 @@ module "policy_dynamic_waf2" {
   cross_site_scripting_action    = "ALERT"
   illegal_resource_access_action = "ALERT"
 }
+```

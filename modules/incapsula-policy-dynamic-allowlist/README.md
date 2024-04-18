@@ -11,3 +11,4 @@ module "policy-dynamic-allowlist-ips" {
   sites_ids                     = { site1 = module.my_quickstart_site.site_id, module.my_site.site_id }
   ips                           = ["1.2.3.6", "1.2.3.7"]
 }
+```

@@ -16,3 +16,4 @@ module "waf-security-rule" {
   ddos_activation_mode          = "api.threats.ddos.activation_mode.on"
   ddos_traffic_threshold        = 3000
 }
+```

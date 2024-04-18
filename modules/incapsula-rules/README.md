@@ -42,3 +42,4 @@ module "my_site_single_server_rules" {
       to            = "https://my-site1.mydomain.co/url2"
     }
   }
+```

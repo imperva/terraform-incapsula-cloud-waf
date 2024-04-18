@@ -11,3 +11,4 @@ module "policy-embargo" {
   embargo_nation_block_policy_name = "My Embargo Nation Block"
   sites_ids                        = { site1 = module.my_site_multi_data_center.site_id }
 }
+```
