@@ -1,6 +1,7 @@
 # Imperva incapsula-policy-embargo description
 
 Configuration in this module allows to configure an embargo countries ACL policy and assign it to several sites
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 
 # Usage examples

@@ -2,6 +2,8 @@
 
 Configuration in this directory creates a site under an account, assign it with allowlist policy and adds to it bots configuration, waf security rules and waf
 exceptions.
+</br><b>This example must be used with Terraform version of 0.14 or newer.</b>
+
 The Allowlist policy grants access from specific IP addresses to the site.
 The bots configuration defines a list of the bad bots and a list of the canceled good pods.
 The WAF security rules define a list of 3 waf security rules. one for backdoor action, a second for bots access and a third for ddos threshold.

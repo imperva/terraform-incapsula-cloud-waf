@@ -1,6 +1,7 @@
 # Imperva incapsula-bots-configuration description
 
 Configuration in this module creates a bots configuration under an account.
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 See https://docs.imperva.com/bundle/cloud-application-security/page/settings/client-classification.htm for bots list names
 

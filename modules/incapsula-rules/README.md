@@ -1,6 +1,7 @@
 # Imperva incapsula-rules description
 
 Configuration in this module creates multiple rules and applies to the provided site.
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 
 # Usage example 

@@ -2,6 +2,7 @@
 # Imperva incapsula-waf-security-rule description
 
 Configuration in this module allows to configure the api.threats.ddos, api.threats.bot_access_control and api.threats.backdoor WAF security rules and assign them to a site
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 
 # Usage examples

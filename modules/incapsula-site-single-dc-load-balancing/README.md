@@ -1,6 +1,7 @@
 # Imperva incapsula-site-single-dc-load-balancing description
 
 Configuration in this module a single data center site with load balancing (multiple servers) under an account
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 
 # Usage examples

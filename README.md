@@ -1,6 +1,7 @@
 # Terraform Imperva Cloud WAF Module
 
 This repository serves as a abstraction and simplification for common uses of the Imperva Cloud WAF terraform resources.
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 ## Usage
 

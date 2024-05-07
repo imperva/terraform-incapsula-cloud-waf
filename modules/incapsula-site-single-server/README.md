@@ -1,6 +1,7 @@
 # Imperva incapsula-site-single-server description
 
 Configuration in this module a single server site under an account
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 
 # Usage examples

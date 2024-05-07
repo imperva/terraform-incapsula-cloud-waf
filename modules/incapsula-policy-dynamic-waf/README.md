@@ -1,6 +1,7 @@
 # Imperva incapsula-policy-dynamic-waf description
 
 Configuration in this module allows to configure a WAF rules policy and assign it to several sites
+</br><b>This module must be used with Terraform version of 0.14 or newer.</b>
 
 
 # Usage examples
