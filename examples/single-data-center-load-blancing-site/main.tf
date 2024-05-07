@@ -23,7 +23,7 @@ module "my_site_single_data_center" {
 ##INFO: The following policies module creates a WAF policy with custom Remote file inclusion configuration at the account level and assign it to no site
 module "policy_dynamic_waf" {
   source                       = "../../modules/incapsula-policy-dynamic-waf"
-  dynamic_acl_policy_name      = "My WAF rule policy"
+  dynamic_waf_policy_name      = "My WAF rule policy"
   sites_ids                    = { site1 = module.my_site_single_data_center.site_id }
   remote_file_inclusion_action = "ALERT"
 }

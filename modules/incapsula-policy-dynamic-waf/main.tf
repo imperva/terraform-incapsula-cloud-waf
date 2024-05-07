@@ -1,7 +1,7 @@
 resource "incapsula_policy" "example-dynamic-waf-block-policy" {
   description     = var.description
   enabled         = true
-  name            = var.dynamic_acl_policy_name
+  name            = var.dynamic_waf_policy_name
   policy_settings = jsonencode(
     [
       {

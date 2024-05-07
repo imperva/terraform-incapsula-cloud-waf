@@ -26,7 +26,7 @@ variable "sql_injection_action" {
   nullable    = true
 }
 
-variable "dynamic_acl_policy_name" {
+variable "dynamic_waf_policy_name" {
   description = "(Required) A unique policy name."
   type        = string
 }
